@@ -60,7 +60,7 @@ kode = "IND"
 tahun = 2012
 n = 10
 '''
-
+'''
 ################Left Upper################
 #Produksi Minyak tahun ke tahun
 left_col.subheader("Produksi Minyak tahun ke tahun")
@@ -97,7 +97,7 @@ cx.barh (cumulative['kode_negara'],cumulative['produksi'])
 plt.tight_layout()
 right_col.pyplot(fig2)
 ################Right Upper################
-
+'''
 '''
 #Summary
 yearmax = (yeartop.sort_values('produksi', ascending = False)).head(1)
