@@ -113,7 +113,7 @@ cumulative = df.groupby(['kode_negara'], as_index=False)['produksi'].sum().sort_
 cumulative = (cumulative.head(n).sort_values("produksi"))
 
 fig3, cx = plt.subplots()
-cx.barh (cumulative['kode_negara'],cumulative['produksi'], color = "grey")
+cx.barh (cumulative['kode_negara'],cumulative['produksi'])
 cx.set_xlabel("Jumlah produksi", fontsize = 12)
 cx.set_ylabel("Negara", fontsize =12)
 plt.tight_layout()
